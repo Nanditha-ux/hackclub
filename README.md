@@ -22,5 +22,5 @@ This project was built as part of my Hack Club journey.
 
 ## Live Demo
 
-[Visit My Portfolio]((https://nanditha-ux.github.io/hackclub/))
+[Visit My Portfolio][https://nanditha-ux.github.io/hackclub/]
  
