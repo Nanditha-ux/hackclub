@@ -15,7 +15,12 @@ This website showcases my skills, projects, interests, and journey as a student 
 - HTML
 - CSS
 
-## 
+## Purpose
 I created this website to learn and practice web development and to showcase my skills.
 <br>
 This project was built as part of my Hack Club journey.
+
+## Live Demo
+
+[Visit My Portfolio]((https://nanditha-ux.github.io/hackclub/))
+ 
