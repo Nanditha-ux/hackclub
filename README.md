@@ -10,7 +10,7 @@ This website showcases my skills, projects, interests, and journey as a student 
 - Projects
 - Education
 - Contact section
-- 
+  
 ## Technologies Used
 - HTML
 - CSS
