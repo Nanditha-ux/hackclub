@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: Arial, sans-serif;
     color: white;
@@ -27,15 +25,12 @@ body {
 }
 .welcome {
     min-height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding: 20px;
-
     position: relative;
     z-index: 2;
 }
@@ -43,18 +38,15 @@ body {
     font-size: 28px;
     margin-bottom: 10px;
 }
-
 .welcome h1 {
     font-size: 60px;
     margin-bottom: 15px;
 }
-
 .welcome h2 {
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 20px;
 }
-
 .welcome p:last-child {
     font-size: 18px;
     opacity: 0.9;
@@ -63,108 +55,155 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-
-    background: linear-gradient(
-        to bottom,
-        #087da8,
-        #075f86,
-        #06496b
-    );
+    background: linear-gradient(to bottom, #087da8, #075f86,#06496b);
 }
 .fish {
     position: absolute;
     font-size: 45px;
-
     animation: swim 12s linear infinite;
 }
-
 .fish-one {
     top: 25%;
     left: -80px;
 }
-
 .fish-two {
     top: 65%;
     right: -80px;
-
     animation-delay: 4s;
     animation-direction: reverse;
 }
-
 @keyframes swim {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(110vw);
+    }
+}
+.jellyfish {
+    position: absolute;
+    font-size: 50px;
+    animation: floatjelly 4s ease-in-out infinite;
+}
+.jellyfish-one {
+    top: 35%;
+    left: 20%;
+}
+.jellyfish-two {
+    top: 55%;
+    right: 20%;
+    font-size: 40px;
+    animation-delay: 2s;
+}
+@keyframes floatJelly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.bubbles span {
+    position: absolute;
+    bottom: -30px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: bubble 8s linear infinite;
+}
+.bubbles span:nth-child(1) {
+    left: 10%;
+    animation-delay: 1s;
+}
+.bubbles span:nth-child(2) {
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 3s;
+}
+.bubbles span:nth-child(3) {
+    left: 40%;
+    animation-delay: 5s;
+}
+.bubbles span:nth-child(4) {
+    left: 60%;
+    width: 12px;
+    height: 12px;
+    animation-delay: 2s;
+}
+.bubbles span:nth-child(5) {
+    left: 75%;
+    animation-delay: 4s;
+}
+.bubbles span:nth-child(6) {
+    left: 90%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 6s;
+}
+@keyframes bubble {
+    0% {
+        bottom: -30px;
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
     }
 }
 .seaweed {
     position: absolute;
     bottom: 0;
-
     font-size: 90px;
 }
-
 .seaweed-one {
     left: 8%;
 }
-
 .seaweed-two {
     right: 10%;
 }
 .shells {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 70px;
-
     flex-wrap: wrap;
-
     padding: 80px 40px;
 }
 .shell {
     width: 150px;
     height: 120px;
-
     background: #f1c9b5;
-
     border-radius: 50% 50% 45% 45%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
-
     position: relative;
-
     box-shadow:
         0 8px 15px rgba(0, 0, 0, 0.25);
-
     transition: transform 0.3s ease;
 }
 .shell::before,
 .shell::after {
     content: "";
-
     position: absolute;
-
     width: 2px;
     height: 80px;
-
     background: rgba(130, 70, 70, 0.4);
-
     bottom: 10px;
 }
-
 .shell::before {
     left: 50%;
 }
-
 .shell::after {
     left: 35%;
     transform: rotate(-15deg);
@@ -174,28 +213,21 @@ body {
 }
 .shell span {
     color: #5c3540;
-
     font-size: 20px;
     font-weight: bold;
-
     position: relative;
     z-index: 2;
 }
 .portfolio-section {
     min-height: 100vh;
-
     padding: 100px 40px;
-
     text-align: center;
-
     background: #06496b;
 }
-
 .portfolio-section h2 {
     font-size: 45px;
     margin-bottom: 30px;
 }
-
 .portfolio-section p {
     font-size: 20px;
     line-height: 1.6;
@@ -203,71 +235,57 @@ body {
 #skills {
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
-
 .skill {
     width: 180px;
-
     margin: 15px;
-
     padding: 20px;
-
     background: rgba(255, 255, 255, 0.12);
-
     border-radius: 15px;
 }
-
 .skill img {
     width: 60px;
     height: 60px;
-
     object-fit: contain;
-
     margin-bottom: 10px;
 }
-
 .skill p {
     font-size: 18px;
 }
 footer {
     padding: 25px;
-
     text-align: center;
-
     background: #04344e;
-
     font-size: 15px;
 }
 @media (max-width: 700px) {
-
     .welcome h1 {
         font-size: 42px;
     }
-
     .welcome h2 {
         font-size: 24px;
     }
-
     .welcome p {
         font-size: 16px;
     }
-
     .shells {
         gap: 30px;
     }
-
     .shell {
         width: 120px;
         height: 100px;
     }
-
     .shell span {
         font-size: 17px;
     }
-
     .fish {
         font-size: 35px;
+    }
+    .jellyfish {
+        font-size: 40px;
+    }
+    .seaweed {
+        font-size: 70px;
     }
 }
